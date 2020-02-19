@@ -120,6 +120,7 @@
     ]
   },
   "scripts": {
+    "build": "./mvnw -Pprod,war clean verify",
     "prettier:format": "prettier --write \"{,src/**/}*.{md,json,ts,tsx,css,scss,yml}\"",
     "lint": "tslint --project tsconfig.json -e 'node_modules/**'",
     "lint:fix": "npm run lint -- --fix",
